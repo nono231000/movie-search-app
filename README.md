@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# ADLAB Movie Search
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet est une application de recherche de films, où l'utilisateur peut rechercher des films par titre ou par genre. Les données des films et des genres sont simulées à partir d'un fichier JSON local dans ce projet. 
 
-## Available Scripts
+## Fonctionnalités
 
-In the project directory, you can run:
+- **Recherche par titre** : Permet de rechercher un film en tapant son nom.
+- **Filtrage par genre** : Permet de filtrer les films par genre (ex : Action, Romance).
+- **Affichage des films** : Liste des films correspondant aux critères de recherche ou de filtrage, affichant le titre, l'année et le score IMDb.
 
-### `npm start`
+## Prérequis
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js et npm installés sur votre machine.
+- Aucun serveur externe requis, les données sont simulées localement.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clonez ce repository :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   git clone <https://github.com/nono231000/movie-search-app>
 
-### `npm run build`
+2. Allez dans le répertoire du projet :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    cd adlab-movie-search
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Installez les dépendances :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    npm install
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Démarrage
+1. Lancez l'application en mode développement :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    npm start
+2. Accédez à l'application dans votre navigateur à l'adresse suivante :
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    http://localhost:3000
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Structure du projet
+Le projet est organisé comme suit :
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+src/
+├── components/           # Composants React : SearchBar, MovieList, GenreDropdown
+├── utils/                # Fonctions utilitaires, comme fetchMovies et fetchGenres
+├── data/                 # Fichiers JSON simulant les données des films et genres
+├── App.js                # Composant principal
+├── App.css               # Styles de l'application
+├── index.js              # Point d'entrée de l'application React
+└── db.json               # Base de données locale des films et genres
