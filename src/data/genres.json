@@ -1,0 +1,8 @@
+{
+    "results": [
+      { "id": 1, "name": "Romance" },
+      { "id": 2, "name": "Action" },
+      { "id": 3, "name": "Crime" }
+    ]
+  }
+  

@@ -1,0 +1,28 @@
+{
+    "titles": [
+      {
+        "id": 1,
+        "title": "Miss Jerry",
+        "year": 1894,
+        "imdb_score": "6.0",
+        "directors": ["Alexander Black"],
+        "actors": ["Blanche Bayliss", "Chauncey Depew", "William Courtenay"],
+        "genres": ["Romance"]
+      },
+      {
+        "id": 2,
+        "title": "The Great Train Robbery",
+        "year": 1903,
+        "imdb_score": "7.2",
+        "directors": ["Edwin S. Porter"],
+        "actors": ["A.C. Abadie", "Gilbert M. Anderson", "George Barnes"],
+        "genres": ["Action", "Crime"]
+      }
+    ],
+    "genres": [
+      { "id": 1, "name": "Romance" },
+      { "id": 2, "name": "Action" },
+      { "id": 3, "name": "Crime" }
+    ]
+  }
+  
